@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "introducao-ao-nextjs-15",
+    "titulo": "Introdução ao Next.js 15: O que há de novo?",
+    "autor": "Maria Silva",
+    "dataPublicacao": "2026-01-05",
+    "resumo": "Descubra todas as novidades e melhorias do Next.js 15, incluindo o App Router aprimorado, React Server Components e muito mais.",
+    "conteudo": "O Next.js 15 representa um marco importante no desenvolvimento web moderno. Com melhorias significativas no App Router, esta versão traz funcionalidades que transformam a forma como construímos aplicações React.\n\nO App Router agora é a abordagem padrão recomendada, oferecendo melhor performance e uma experiência de desenvolvimento mais intuitiva. Os React Server Components são renderizados no servidor por padrão, reduzindo o bundle JavaScript enviado ao cliente.\n\nAlém disso, o sistema de cache foi completamente redesenhado, proporcionando controle mais granular sobre como e quando os dados são revalidados. Isso permite criar aplicações extremamente rápidas sem sacrificar a experiência do desenvolvedor.\n\nOutras melhorias incluem suporte aprimorado para TypeScript, melhor tratamento de erros, e novas funcionalidades de streaming que tornam o carregamento de páginas ainda mais rápido."
+  },
+  {
+    "slug": "react-server-components-explicados",
+    "titulo": "React Server Components: Um Guia Completo",
+    "autor": "João Santos",
+    "dataPublicacao": "2025-12-20",
+    "resumo": "Entenda como os React Server Components funcionam e como utilizá-los efetivamente em suas aplicações Next.js.",
+    "conteudo": "Os React Server Components (RSC) representam uma mudança fundamental na arquitetura de aplicações React. Diferentemente dos componentes tradicionais que são renderizados no cliente, os RSC são executados exclusivamente no servidor.\n\nEssa abordagem traz várias vantagens: redução no tamanho do bundle JavaScript, acesso direto a recursos do servidor (como bancos de dados), e melhor performance inicial de carregamento.\n\nPara usar RSC no Next.js 15, você simplesmente cria componentes async que fazem fetch de dados diretamente. Não é necessário usar useEffect ou useState para dados que podem ser carregados no servidor.\n\nÉ importante entender a diferença entre Server e Client Components. Use 'use client' apenas quando precisar de interatividade do lado do cliente, como event handlers, hooks de estado, ou APIs do navegador.\n\nCombinar Server e Client Components adequadamente é a chave para criar aplicações rápidas e eficientes."
+  },
+  {
+    "slug": "seo-otimizado-nextjs",
+    "titulo": "SEO Otimizado com Next.js: Melhores Práticas",
+    "autor": "Ana Costa",
+    "dataPublicacao": "2025-12-15",
+    "resumo": "Aprenda a implementar estratégias de SEO eficazes utilizando as funcionalidades nativas do Next.js para melhorar o ranking nos motores de busca.",
+    "conteudo": "O Next.js oferece ferramentas poderosas para otimização de SEO, sendo uma das melhores escolhas para sites que precisam de boa visibilidade nos motores de busca.\n\nA função generateMetadata permite criar metadados dinâmicos para cada página. Você pode definir title, description, Open Graph tags, e muito mais de forma programática.\n\nO Server-Side Rendering (SSR) e Static Site Generation (SSG) garantem que os crawlers dos motores de busca recebam HTML completo, melhorando significativamente a indexação.\n\nOutras práticas importantes incluem: usar o componente Image para otimização automática de imagens, implementar structured data com JSON-LD, criar sitemaps dinâmicos, e utilizar o arquivo robots.txt adequadamente.\n\nCom generateStaticParams, você pode pré-renderizar páginas dinâmicas no build time, combinando os benefícios de conteúdo dinâmico com performance de site estático.\n\nLembre-se: SEO não é apenas sobre metadados. Performance, acessibilidade e experiência do usuário também são fatores de ranking importantes."
+  },
+  {
+    "slug": "typescript-nextjs-boas-praticas",
+    "titulo": "TypeScript + Next.js: Boas Práticas para 2026",
+    "autor": "Carlos Oliveira",
+    "dataPublicacao": "2025-12-10",
+    "resumo": "Descubra como tirar o máximo proveito do TypeScript em projetos Next.js, com dicas práticas e padrões recomendados.",
+    "conteudo": "TypeScript se tornou praticamente essencial no desenvolvimento de aplicações Next.js modernas. A tipagem estática previne erros, melhora a documentação do código e proporciona uma melhor experiência de desenvolvimento.\n\nNo Next.js 15, a integração com TypeScript é ainda mais robusta. Os tipos para Server e Client Components, generateMetadata, generateStaticParams e outras APIs são completamente tipados.\n\nBoas práticas incluem: criar interfaces para seus dados (como tipos para artigos de blog), tipar props de componentes adequadamente, usar genéricos quando apropriado, e aproveitar utility types do TypeScript.\n\nCrie um diretório types/ ou lib/types.ts para centralizar definições de tipos compartilhados. Isso facilita manutenção e reutilização.\n\nUtilize o strict mode no tsconfig.json para obter o máximo de segurança de tipos. Configure path aliases para imports mais limpos.\n\nEvite usar 'any' - se você não sabe o tipo, use 'unknown' e faça type guards. Aproveite o poder do type inference sempre que possível para código mais conciso."
+  },
+  {
+    "slug": "deploy-vercel-guia-completo",
+    "titulo": "Deploy no Vercel: Do Zero à Produção",
+    "autor": "Patricia Almeida",
+    "dataPublicacao": "2025-12-05",
+    "resumo": "Um guia passo a passo para fazer deploy de sua aplicação Next.js no Vercel, com dicas de configuração e otimização.",
+    "conteudo": "O Vercel é a plataforma ideal para hospedar aplicações Next.js, oferecendo deploy automático, preview deployments, e infraestrutura otimizada.\n\nPara fazer deploy, primeiro conecte seu repositório GitHub ao Vercel. A plataforma detecta automaticamente que é um projeto Next.js e configura o build adequadamente.\n\nConfigure variáveis de ambiente na dashboard do Vercel para chaves de API e outras informações sensíveis. Nunca commite secrets no código!\n\nO Vercel oferece features incríveis: cada push para branches cria um preview deployment único, facilitando revisão de código. O deploy para produção acontece automaticamente ao fazer merge para a branch main.\n\nOtimizações importantes: configure cache headers apropriadamente, use ISR (Incremental Static Regeneration) para páginas que precisam atualização periódica, e monitore analytics para entender o comportamento dos usuários.\n\nA plataforma também oferece Edge Functions, que rodam em edge locations ao redor do mundo, reduzindo latência drasticamente.\n\nCom certificados SSL automáticos, CDN global e rollbacks com um clique, o Vercel torna o processo de deploy extremamente simples e confiável."
+  }
+]
