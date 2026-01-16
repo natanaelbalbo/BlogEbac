@@ -1,6 +1,6 @@
 # 📝 Blog EBAC
 
-Projeto de blog desenvolvido como parte do curso de Full Stack da EBAC. Uma aplicação moderna que demonstra o uso das principais funcionalidades do Next.js 15, incluindo App Router, Server Components e geração estática de páginas.
+Projeto de blog desenvolvido como parte do curso de Engenheiro Front-end da EBAC. Uma aplicação moderna que demonstra o uso das principais funcionalidades do Next.js 15, incluindo App Router, Server Components e geração estática de páginas.
 
 ## 🎯 Sobre o Projeto
 
